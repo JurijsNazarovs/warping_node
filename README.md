@@ -2,9 +2,9 @@ Official repository of the paper (AICC 2022) ["Image2Gif: Generating Continuous 
 
 *Repository is under construction.*
 
-![](demo/images/smile_teaser.pdf "Demonstration of Warping Neural ODE" )
-![](demo/images/smile_vf.pdf "Demonstration of Warping Neural ODE" )
-![](demo/images/warpode.pdf "Demonstration of Warping Neural ODE" )
+![](demo/images/smile_teaser.png "Demonstration of Warping Neural ODE" )
+![](demo/images/smile_vf.png "Demonstration of Warping Neural ODE" )
+![](demo/images/warpode.png "Demonstration of Warping Neural ODE" )
 
 If you like our work, please give us a star. 
 <!-- If you use our code in your research projects, please cite our paper as -->
