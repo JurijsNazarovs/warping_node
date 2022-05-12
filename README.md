@@ -1,4 +1,4 @@
-Official repository of the paper (AICC 2022) ["Image2Gif: Generating Continuous Realistic Animations with Warping NODEs"](demo/paper.pdf), Warping Neural ODE.
+Official repository of the paper (AI for Content Creation (AICC) Workshop, CVPR 2022) ["Image2Gif: Generating Continuous Realistic Animations with Warping NODEs"](demo/paper.pdf), Warping Neural ODE.
 
 *Repository is under construction.*
 
