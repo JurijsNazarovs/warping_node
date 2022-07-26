@@ -24,7 +24,8 @@ python3 main.py --n_epochs 5000 --data mnist_warp --experimentID mnist_warp --de
 ```
 Once training is done, you can add to the previous command the following arguments:
 ```--load --test_only --plot_last_vf --plot_all ```
-It will load the last model, and produce images of warping in the following directory: `plots/mnnist_warp/vf_seq/`. \\
+It will load the last model, and produce images of warping in the following directory: `plots/mnnist_warp/vf_seq/`.
+
 Then you can use `make_gif.sh` scrip to generate gif as (for example): 
 `./makegif.sh plots_gif/mnist.gif plots/mnist_warp/vf_seq/0_0/ 2 100`.
 
@@ -37,7 +38,8 @@ python3 main.py --n_epochs 5000 --data face_warp_smile --experimentID face_warp_
 ```
 Once training is done, you can add to the previous command the following arguments:
 ```--load --test_only --plot_last_vf --plot_all ```
-It will load the last model, and produce images of warping in the following directory: `plots/face_warp_smile/vf_seq/`. \\
+It will load the last model, and produce images of warping in the following directory: `plots/face_warp_smile/vf_seq/`. 
+
 Then you can use `make_gif.sh` scrip to generate gif as (for example): 
 `./makegif.sh plots_gif/smile.gif plots/face_warp_smile/vf_seq/0_0/ 2 100`.
 
