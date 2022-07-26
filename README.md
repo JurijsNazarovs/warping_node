@@ -23,7 +23,7 @@ To train the model on warping from 3 to 4, you can run the folloowing code:
 python3 main.py --n_epochs 5000 --data mnist_warp --experimentID mnist_warp --device 0  --batch_size 64  --n_epochs_start_viz 50000 --gen_loss_weight 1 --disc_loss_weight 1 --gan_type lsgan --ode_solver euler  --freq_gen_update 1 --decay_every 100 --lr_gen 0.0001 --lr_disc 0.0001 --ode_vf init_img_y --ode_norm none --plots_path plots/ --rec_loss_weight 0.01 --freq_rec_update 1 --last_warp --jac_loss_weight_forw 1 --jac_loss_weight_back 1 --rec_weight_method default --outgrid_loss_weight_forw 1 --outgrid_loss_weight_back 1 --crit_iter 10 --gplambda 10 --disc_optim adam --unet_add_input --normalize_method scale --ode_step_size 0.05 --channels 1
 ```
 Once training is done, you can add to the previous command the following arguments:
-```--load --test_only --plot_last_vf --plot_all ```
+`--load --test_only --plot_all`.
 It will load the last model, and produce images of warping in the following directory: `plots/mnnist_warp/vf_seq/`.
 
 Then you can use `make_gif.sh` script to generate gif as (for example): 
@@ -37,7 +37,7 @@ Similar, to generate smiling faces you can run the following code:
 python3 main.py --n_epochs 5000 --data face_warp_smile --experimentID face_warp_smile --device 0  --batch_size 16  --n_epochs_start_viz 50000 --gen_loss_weight 1 --disc_loss_weight 1 --gan_type None --ode_solver euler  --freq_gen_update 1 --decay_every 100 --lr_gen 0.0001 --lr_disc 0.0001 --ode_vf init_img_y --ode_norm none --plots_path plots/ --rec_loss_weight 0.01 --freq_rec_update 1 --last_warp --jac_loss_weight_forw 1 --jac_loss_weight_back 1 --rec_weight_method default --outgrid_loss_weight_forw 1 --outgrid_loss_weight_back 1 --crit_iter 10 --gplambda 10 --disc_optim adam --unet_add_input --normalize_method scale --ode_step_size 0.05 --channels 4 
 ```
 Once training is done, you can add to the previous command the following arguments:
-```--load --test_only --plot_last_vf --plot_all ```
+`--load --test_only --plot_all `.
 It will load the last model, and produce images of warping in the following directory: `plots/face_warp_smile/vf_seq/`. 
 
 Then you can use `make_gif.sh` script to generate gif as (for example): 
