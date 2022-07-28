@@ -31,8 +31,8 @@ There are 2 files, which provide all options to the code.
 1. `data_config.py` describes all information about data. If you would like to add 
 your own set, you can do it by adding extra `elif`, with corresponding name of your
 dataset and 4 parameters: source path, target path,  image size and number of channels.
-Note that some images have 4 channels, which include RGB and alpha.
-Currently network works with images of size 32 and 64. 
+*Note* that some images have 4 channels, which include RGB and alpha.
+Currently, network works with images of size 32 and 64. 
 If you provide images with higher resolution, they will be resized to 64x64 pixels,
 in `utils.py` function `get_data`.
 
