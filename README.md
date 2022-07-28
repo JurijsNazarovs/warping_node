@@ -15,6 +15,28 @@ please cite our paper as
 ![](demo/images/smile_vf.png "Demonstration of Warping Neural ODE" )
 ![](demo/images/warpode.png "Demonstration of Warping Neural ODE" )
 
+# Installation
+## Packages
+The requirements.txt was generated with `pipreqs --force ./ > requirements.txt`. 
+It contains description of packages used for this project.
+You can install required packages as `pip install -r requirements.txt`. 
+*Note*: requirements.txt was not generated as a copy-slice from conda environment.
+
+## Data
+The demo data is provided in `./datasets/` folder. You need to extract data as
+`tar -xzvf RotatingMnist.tar.gz` and `tar -xzvf smile.tar.gz`. 
+
+## Running
+There are 2 files, which provide all options to the code.
+1. `data_config.py` describes all information about data. If you would like to add 
+your own set, you can do it by adding extra `elif`, with corresponding name of your
+dataset and 3 parameters: source path, target path and image size. 
+Currently network works with images of size 32 and 64. 
+If you provide images with higher resolution, they will be resized to 64x64 pixels,
+in `utils.py` function `get_data`.
+2. `config.py` describes all parameters used for the network. They can be either
+changed in that file or provided as argument in the terminal. Examples below.
+
 
 # Visualization of experiments
 ## Warping MNIST
