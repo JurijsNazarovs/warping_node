@@ -17,7 +17,7 @@ please cite our paper as
 
 # Installation
 ## Packages
-The requirements.txt was generated with `pipreqs --force ./ > requirements.txt`. 
+The `requirements.txt` was generated with `pipreqs --force ./ > requirements.txt`. 
 It contains description of packages used for this project.
 You can install required packages as `pip install -r requirements.txt`. 
 *Note*: requirements.txt was not generated as a copy-slice from conda environment.
